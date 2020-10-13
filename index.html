@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="jsVideoPlayer">
+      <!-- <video control="true">
+        <source
+          src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+          type="video/mp4"
+        />
+      </video> -->
+      <video loop id="videoFile">
+        <source
+          src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div class="videoPlayer__controls">
+        <div class="videoPlayer__column">
+          <span id="jsPlayBtn">
+            <i class="fas fa-play"></i>
+          </span>
+        </div>
+        <div class="videoPlayer__column">
+          <input id="video__slider" type="range" min="0" max="100" value="0" />
+        </div>
+        <div class="videoPlayer__column">
+          <span>
+            <span id="currentTime">00:00:00</span>
+            /
+            <span id="totalTime">00:00:00</span>
+          </span>
+          <span id="jsVolumeBtn">
+            <i class="fas fa-volume-up"></i>
+          </span>
+          <span>
+            <i class="fas fa-cog"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
